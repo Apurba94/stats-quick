@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stats-quick"
+version = "0.1.0"
+description = "Pure-Python descriptive statistics, Welch t-test and Mann-Whitney U for quick checks."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+stats-quick = "stats_quick.cli:main"
+
+[tool.setuptools]
+packages = ["stats_quick"]
